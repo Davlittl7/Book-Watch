@@ -2,7 +2,6 @@
   {
     "author": "Chinua Achebe",
     "country": "Nigeria",
-    "imageLink": "images/things-fall-apart.jpg",
     "language": "English",
     "pages": 209,
     "title": "Things Fall Apart",
@@ -11,7 +10,6 @@
   {
     "author": "Hans Christian Andersen",
     "country": "Denmark",
-    "imageLink": "images/fairy-tales.jpg",
     "language": "Danish",
     "pages": 784,
     "title": "Fairy tales",
@@ -20,7 +18,6 @@
   {
     "author": "Dante Alighieri",
     "country": "Italy",
-    "imageLink": "images/the-divine-comedy.jpg",
     "language": "Italian",
     "pages": 928,
     "title": "The Divine Comedy",
@@ -29,7 +26,6 @@
   {
     "author": "Unknown",
     "country": "Sumer and Akkadian Empire",
-    "imageLink": "images/the-epic-of-gilgamesh.jpg",
     "language": "Akkadian",
     "pages": 160,
     "title": "The Epic Of Gilgamesh",
