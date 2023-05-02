@@ -51,6 +51,8 @@ extension HomeScreenViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookTableViewCell", for: indexPath) as! BookTableViewCell
         
+        
+        
         cell.homeBookInfoLabel.text = "\(data[indexPath.row].title), \(data[indexPath.row].author), \(data[indexPath.row].pages)"
         
         return cell
