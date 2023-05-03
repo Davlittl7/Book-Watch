@@ -18,6 +18,7 @@ class BookTableViewCell: UITableViewCell {
     
     @IBOutlet weak var homeBookImg: UIImageView!
     @IBOutlet weak var homeAddBookBtn: UIButton!
+    var isUnique: Bool = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,6 +34,16 @@ class BookTableViewCell: UITableViewCell {
 
     @IBAction func HomeAddBookBtnClicked(_ sender: UIButton) {
         print("I was clicked!")
-        HomeScreenViewController.myBooksVC?.accountBooksArr.append(homeBookInfoLabel.text ?? "")
+        isUnique = true;
+        
+        for i in HomeScreenViewController.myBooksVC?.accountBooksArr.indices {
+            if(homeBookInfoLable.text == HomeScreenViewController.myBooksVC?.accountBooksArr[i]) {
+                isUnique = false
+            }
+        }
+        
+        if(isUnique) {
+            HomeScreenViewController.myBooksVC?.accountBooksArr.append(homeBookInfoLabel.text ?? "")
+        }
     }
 }
